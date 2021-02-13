@@ -1,20 +1,76 @@
+<?php require 'conn.php' ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-	     <meta charset="utf-8">
-		 <title> Login Form</title>
-		 <link rel="stylesheet" type="text/css" href="style1.css">
-	</head>
-	<body>
-	 
-	 <form class="box" action="web.html" method="post">
-	     <h1>login</h1>
-		 <input type="text" name="" placeholder="Register number">
-		 <input type="password" name="" placeholder="password">
-		 <input type="Submit" name"" value="Login">
-		 <p class="message">Not Registered! <a href="a" action="web.html" method="post">Sign-up</a>
-		 
-		 </p>
-	</form>
-	</body>
- </html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Register Form</title>
+<style>
+    #name{
+        width:150%;
+    }
+    .male{
+        word-spacing:60px;
+    }
+    #mail{
+        width:150%
+    }
+    #adar{
+        width:150%   
+    }
+    #number{
+        width:150%;
+    }
+    #sub{
+        color:red;
+        font-size:20px;
+        background-color:skyblue;
+    }
+</style>
+</head>
+<body style="background-color:#26b324; background-image:url(https://cdn.home-designing.com/wp-content/uploads/2019/04/Lshaped-modern-sofa.jpg)">
+<h1 style="color:blue; margin-left:500px; text-shadow:2px 2px;"> CONTACT US!</h1>
+<h2 style="color:red; margin-left:650px; margin-top:-20px;"><b> we are there for you!!</b></h2>
+<form action="" method="POST" style=" margin-left:500px; font-size:28px;  margin-top:200px; color:#03fce8;" >
+<table>
+<tr>
+<td><b>Name :</b></td>
+<td><input type="text" name="username" id="name" required></td>
+</tr>
+
+<tr>
+<td><b>Gender :</b></td>
+<td>
+<input type="radio" name="gender" class="male" value="m" required>Male
+<input type="radio" name="gender" class="male" value="f" required>Female
+</td>
+</tr>
+<tr>
+<td><b>Email :</b></td>
+<td><input type="email" name="email" id="mail" required></td>
+</tr>
+<tr>
+<td><b>Address :</b></td>
+<td><input type="address" name="address"  id="adar" required></td>
+</tr>
+<tr>
+<td><b>Phone no :</b></td>
+<td>
+<select name="phoneCode">
+<option selected hidden value"">Select Code</option>
+<option value="977">977</option>
+<option value="978">978</option>
+<option value="979">979</option>
+<option value="973">973</option>
+<option value="972">972</option>
+<option value="974">974</option>
+</select>
+<input type="phone" name="phone" id="number" required>
+</td>
+</tr>
+<tr>
+<td><input type="submit" value="submit"  id="sub" name="add"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
